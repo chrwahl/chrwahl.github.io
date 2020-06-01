@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article>
+  <header>
+    <h3>{{ page.title }}</h3>
+    <p>
+      {{ page.date | date_to_string }}
+      {% assign author = site.authors | where: 'short_name', page.author | first %}
+      {% if author %}
+        • <a href="/about/">{{ author.name }}</a>
+      {% endif %}
+    </p>
+  </header>
+  {{ content }}
+</article>

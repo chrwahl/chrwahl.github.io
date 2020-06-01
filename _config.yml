@@ -1,0 +1,25 @@
+# bundle exec jekyll serve
+title: Christian Wahl
+description: >-
+  This is my personal blog where I write about topics related to web development.
+url: "https://chrwahl.github.io"
+
+collections:
+  authors:
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "christian"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      author: "christian"
+
+# Build settings
+plugins:
+  - jekyll-feed
