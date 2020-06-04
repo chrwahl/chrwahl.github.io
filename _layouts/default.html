@@ -1,7 +1,7 @@
 {% assign author = site.authors | where: 'short_name', page.author | first %}
 <!doctype html>
 <html lang="en">
-  <head>
+  <head profile="http://gmpg.org/xfn/11">
     <meta charset="utf-8" />
     <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
     <link rel="stylesheet" href="/css/style.css" />
@@ -29,7 +29,7 @@
       <ul class="links">
         {% if author %}
           {% for nav in author.social %}
-            <li><a href="{{ nav.link }}" target="_blank">{{ nav.name }}</a></li>
+            <li><a href="{{ nav.link }}" target="_blank" rel="me">{{ nav.name }}</a></li>
           {% endfor %}
         {% endif %}
       </ul>
