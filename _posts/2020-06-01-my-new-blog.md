@@ -1,6 +1,6 @@
 ---
 title:  "My new blog"
-date:   2020-06-01 20:45:00
+date:   2020-06-01 20:45:00 +02
 ---
 
 I had this idea for a blog post, but nowhere to post it. Tired of all the other solutions I decided to redesign my [GitHub Pages](https://pages.github.com/){:target="_blank"} website and turn it into a blog.

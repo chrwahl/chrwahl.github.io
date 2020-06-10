@@ -1,6 +1,6 @@
 ---
 title:  "SVG as background in Ubuntu Desktop"
-date:   2020-06-04 08:50:00
+date:   2020-06-04 08:50:00 +02
 tags: ["Ubuntu","Gnome","SVG"]
 ---
 
