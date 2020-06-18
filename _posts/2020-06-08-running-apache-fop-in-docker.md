@@ -58,8 +58,11 @@ Just to give a practical (and short) example. This is the contents of helloworld
 <?xml version="1.0" encoding="UTF-8"?>
 <root xmlns="http://www.w3.org/1999/XSL/Format">
   <layout-master-set>
-    <simple-page-master margin="10mm" page-width="210mm" page-height="297mm" master-name="simple">
-      <region-body region-name="simple-body" margin-bottom="20mm" margin-top="20mm" />
+    <simple-page-master
+      margin="10mm" page-width="210mm" page-height="297mm"
+      master-name="simple">
+      <region-body region-name="simple-body"
+        margin-bottom="20mm" margin-top="20mm" />
     </simple-page-master>
   </layout-master-set>
   <page-sequence master-reference="simple">
