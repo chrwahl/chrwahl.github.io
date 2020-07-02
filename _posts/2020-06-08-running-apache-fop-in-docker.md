@@ -76,8 +76,6 @@ Just to give a practical (and short) example. This is the contents of helloworld
 To generate a PDF file execute:
 
 ```sh
-$ docker run -v $(pwd):/src -w /src -it --rm fop helloworld.fo helloworld.pdf
+$ docker run --user $(id -u):$(id -g) -v $(pwd):/src -w /src -it --rm fop helloworld.fo helloworld.pdf
 ```
-Where `-v` is mapping the current directory to `/src`, `-w` is setting the working directory to `/src` and `fop  helloworld.fo helloworld.pdf` will generate a PDF file and save it in the working directory.
-
-There are issues with the ownership of the generated PDF files, but I will look into that at a later point.
+Where `--user` set the user to be you (instead of root), `-v` is mapping the current directory to `/src`, `-w` is setting the working directory to `/src` and `fop helloworld.fo helloworld.pdf` will generate a PDF file and save it in the working directory.
