@@ -30,3 +30,8 @@ var external = [...document.links].filter(a => !a.href.startsWith(origin));
 console.log(external);
 
 ```
+
+Here I create a URL object based on the current baseURI of the document.
+Then I get the origin so that I can compare that with all the links.
+There can be different ways of writing URLs in the href attribute, but the href property will always return the *absolute* path that starts off with the origin.
+So, by testing if a href starts with the origin you can see if it is an internal or external link.
